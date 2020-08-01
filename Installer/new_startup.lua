@@ -6,7 +6,7 @@ print("This computer is running Noctstruct v"..version)
 print("Startup complete")
 
 local help_path = "/help/"
-help.setPath(help.path()..help_path)
+help.setPath(help.path()..":"..help_path)
 
 local autorun_path = "/etc/autorun/autorun/"
 	
