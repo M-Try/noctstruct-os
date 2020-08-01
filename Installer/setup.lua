@@ -1,3 +1,7 @@
+settings.set("nstructos.version", os_version)
+settings.set("nstructos.build", os_build)
+settings.save(".settings")
+
 fs.makeDir("etc/netconfig")
 fs.makeDir("etc/autorun/disabled")
 fs.makeDir("etc/autorun/autorun")

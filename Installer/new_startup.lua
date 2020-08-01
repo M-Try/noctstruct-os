@@ -1,6 +1,6 @@
 -- TODO: make a way of checking if the computer is booting since a repeated run of the startup file might cause unwanted behaviour    
 
-version = "1.2" -- might wanna read that from some sort of os information file, like with the installerinfo
+local version = settings.get("nstructos.version", " Error - check .settings file")
 
 print("This computer is running Noctstruct v"..version)
 print("Startup complete")
