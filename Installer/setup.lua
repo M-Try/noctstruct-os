@@ -1,11 +1,12 @@
-settings.set("nstructos.version", os_version)
-settings.set("nstructos.build", os_build)
-settings.save(".settings")
-
 fs.makeDir("etc/netconfig")
 fs.makeDir("etc/autorun/disabled")
 fs.makeDir("etc/autorun/autorun")
 fs.makeDir("cfg")
+fs.makeDir("os")
+
+settings.set("nstructos.version", os_version)
+settings.set("nstructos.build", os_build)
+settings.save("os/.osinfo")
 
 fs.copy(installer_mountpath.."/sPaths.lua", "etc/autorun/autorun/sPaths.lua")
 fs.copy(installer_mountpath.."/sPaths_config", "etc/sPaths_config")
