@@ -11,6 +11,7 @@ settings.save("os/.osinfo")
 fs.copy(installer_mountpath.."/sPaths.lua", "etc/autorun/autorun/sPaths.lua")
 fs.copy(installer_mountpath.."/sPaths_config", "etc/sPaths_config")
 fs.copy(installer_mountpath.."/autorun_edit.lua", "etc/autorun/autorun_edit.lua")
+fs.copy(installer_mountpath.."/help", "help")
 
 if fs.exists("startup.lua") then
     fs.move("startup.lua", "old_startup.lua")

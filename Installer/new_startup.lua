@@ -5,7 +5,11 @@ local version = settings.get("nstructos.version", " Error - check .osinfo file")
 print("This computer is running Noctstruct v"..version)
 print("Startup complete")
 
+local help_path = "/help/"
+help.setPath(help.path()..help_path)
+
 local autorun_path = "/etc/autorun/autorun/"
+	
 
 for _,v in ipairs(fs.list(autorun_path)) do
     if not fs.isDir(autorun_path..v) then

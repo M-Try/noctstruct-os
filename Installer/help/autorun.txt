@@ -1,0 +1,34 @@
+Autorun is a functionality included in Noctstruct
+and allows you to quickly and easily start programs
+on startup.
+
+Using the autorun_edit program you can add entries
+to the autorun folder located at
+/etc/autorun/autorun/
+These entries can be either scripts or a
+".pl"-file containing the path to the program in
+question. 
+
+ex:
+"autorun_edit enable SomeEntry.lua" will enable
+autostart for "SomeEntry.lua", if the file exists.
+
+"autorun_edit disable SomeEntry.lua" will disable
+autostart for "SomeEntry.lua", if the file exists.
+
+"autorun_edit add scripts/SomeScript.lua" will copy
+"scripts/SomeScript.lua" and add it as an entry.
+
+"autorun_edit add_link scripts/SomeScript.lua" will
+add a file with a link to "disk/SomeScript.lua" as
+an entry called "SomeScript.lua.pl"
+
+"autorun_edit remove SomeEntry.lua" will remove
+"SomeEntry.lua" or "SomeEntry.lua.pl". This only
+removes entries that have been disabled. 
+
+Newly added entries will be disabled at first, so
+make sure to enable them after you added them.
+Adding links is not advised when working with
+disks, as it can cause problems if the disk has
+been removed.
