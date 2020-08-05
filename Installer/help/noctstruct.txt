@@ -1,0 +1,18 @@
+Noctstruct is an OS running on top of CraftOS.
+It augments the structure of the filesystem and
+aims to make building complex and big programs
+easier and make usage of the computer as a system
+more intuitive and comfortable.
+
+Folder Disambiguation:
+
+The "os" folder contains important files and
+information for and about Noctstruct itself.
+
+The "etc" folder contains programs and services
+that belong to the system and usually arent
+intended to interact with the user directly.
+It also contains the "autorun" folder.
+
+The "cfg" folder is made to inhabit configuration
+files and relevant system settings.
