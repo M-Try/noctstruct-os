@@ -9,7 +9,6 @@ local help_path = "/help/"
 help.setPath(help.path()..":"..help_path)
 
 local autorun_path = "/etc/autorun/autorun/"
-	
 
 for _,v in ipairs(fs.list(autorun_path)) do
     if not fs.isDir(autorun_path..v) then
@@ -21,4 +20,8 @@ for _,v in ipairs(fs.list(autorun_path)) do
             shell.run(autorun_path..v)
         end
     end
+end
+
+_G.globalise = function(sName, aObject)
+    _G[sName] = aObject
 end
