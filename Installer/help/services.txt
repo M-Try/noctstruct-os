@@ -1,5 +1,0 @@
-Services are background tasks usually designed to handle events, like messages or redstone events.
-Services have to yield at a certain point. After they yielded they will
-be reinvoked by the parent coroutine.
-
-Services have to have a "_main" function
